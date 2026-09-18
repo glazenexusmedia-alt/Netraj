@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shri Natraj Alankar Pvt. Ltd. | Fine Jewellery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ivory:#f8f4ec;
+  --cream:#fffdf8;
+  --wine:#641c2a;
+  --wine2:#7c2636;
+  --gold:#c9a45c;
+  --ink:#211a17;
+  --muted:#766d67;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"DM Sans",sans-serif;
+  background:var(--ivory);
+  color:var(--ink);
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* NAVBAR */
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  background:rgba(248,244,236,.92);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid rgba(100,28,42,.1);
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:17px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand{
+  font-family:"Cormorant Garamond",serif;
+  font-size:25px;
+  font-weight:700;
+  color:var(--wine);
+}
+
+.brand small{
+  display:block;
+  font-family:"DM Sans";
+  font-size:8px;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  color:var(--gold);
+  line-height:1;
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:27px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.links a:hover{
+  color:var(--wine2);
+}
+
+.navbtn{
+  padding:10px 18px;
+  border-radius:30px;
+  background:var(--wine);
+  color:#fff !important;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  max-width:1200px;
+  margin:auto;
+  padding:120px 24px 70px;
+  display:grid;
+  grid-template-columns:1fr 1.05fr;
+  align-items:center;
+  gap:55px;
+}
+
+.eyebrow{
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:600;
+}
+
+.hero h1{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(54px,7vw,92px);
+  line-height:.9;
+  font-weight:600;
+  color:var(--wine);
+  margin:16px 0 23px;
+}
+
+.hero p{
+  max-width:500px;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 24px;
+  border-radius:3px;
+  background:var(--wine);
+  color:#fff;
+  font-weight:600;
+  font-size:13px;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+  background:var(--wine2);
+}
+
+.btn.alt{
+  background:transparent;
+  color:var(--wine);
+  border:1px solid rgba(100,28,42,.3);
+}
+
+.hero-img{
+  height:640px;
+  position:relative;
+}
+
+.hero-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius:2px 90px 2px 90px;
+}
+
+.seal{
+  position:absolute;
+  bottom:25px;
+  left:-35px;
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background:var(--cream);
+  border:1px solid var(--gold);
+  display:grid;
+  place-items:center;
+  text-align:center;
+  font-family:"Cormorant Garamond";
+  font-size:15px;
+  color:var(--wine);
+  box-shadow:0 15px 40px #3d252015;
+}
+
+.seal span{
+  display:block;
+  font-family:"DM Sans";
+  font-size:7px;
+  letter-spacing:1.5px;
+  color:var(--gold);
+}
+
+/* GENERAL */
+
+section{
+  padding:95px 24px;
+}
+
+.wrap{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section-head{
+  text-align:center;
+  max-width:650px;
+  margin:0 auto 48px;
+}
+
+.section-head h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:52px;
+  line-height:1;
+  font-weight:600;
+  color:var(--wine);
+  margin:9px 0 12px;
+}
+
+.section-head p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* COLLECTIONS */
+
+.collections{
+  background:var(--cream);
+}
+
+.collection-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.collection{
+  position:relative;
+  height:430px;
+  overflow:hidden;
+  border-radius:3px;
+}
+
+.collection img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.7s;
+}
+
+.collection:hover img{
+  transform:scale(1.06);
+}
+
+.collection::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    transparent 45%,
+    rgba(33,26,23,.85)
+  );
+}
+
+.collection div{
+  position:absolute;
+  z-index:2;
+  bottom:24px;
+  left:22px;
+  color:white;
+}
+
+.collection h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:29px;
+  font-weight:600;
+}
+
+.collection p{
+  font-size:11px;
+  color:#eee;
+}
+
+/* PRODUCTS */
+
+.featured{
+  background:var(--ivory);
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.product{
+  background:var(--cream);
+  border:1px solid rgba(100,28,42,.08);
+  padding-bottom:20px;
+  transition:.35s;
+}
+
+.product:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(60,30,20,.08);
+}
+
+.product img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+}
+
+.product .info{
+  padding:18px 18px 0;
+}
+
+.tag{
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+
+.product h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:27px;
+  font-weight:600;
+  color:var(--wine);
+  margin:5px 0;
+}
+
+.product p{
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:15px;
+}
+
+.enquire{
+  font-size:12px;
+  color:var(--wine);
+  font-weight:700;
+  border-bottom:1px solid var(--gold);
+  padding-bottom:3px;
+}
+
+/* ABOUT */
+
+.story{
+  background:var(--cream);
+}
+
+.story-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.story img{
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  border-radius:90px 2px 90px 2px;
+}
+
+.story h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:56px;
+  line-height:1;
+  font-weight:600;
+  color:var(--wine);
+  margin:10px 0 18px;
+}
+
+.story p{
+  color:var(--muted);
+  font-size:15px;
+  max-width:520px;
+}
+
+.facts{
+  display:flex;
+  gap:35px;
+  margin-top:30px;
+}
+
+.fact strong{
+  display:block;
+  color:var(--wine);
+  font-family:"Cormorant Garamond",serif;
+  font-size:30px;
+}
+
+.fact span{
+  font-size:10px;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+/* CONTACT */
+
+.visit{
+  background:var(--wine);
+  color:white;
+}
+
+.visit-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:50px;
+  align-items:center;
+}
+
+.visit h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:60px;
+  line-height:1;
+  font-weight:600;
+  color:#fff;
+}
+
+.visit p{
+  color:#eadfe0;
+  margin:18px 0 25px;
+  max-width:560px;
+}
+
+.contact-card{
+  background:#fff;
+  padding:30px;
+  color:var(--ink);
+  border-radius:3px;
+}
+
+.contact-card h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:30px;
+  font-weight:600;
+  color:var(--wine);
+  margin-bottom:14px;
+}
+
+.row{
+  padding:12px 0;
+  border-bottom:1px solid rgba(100,28,42,.1);
+  font-size:13px;
+}
+
+.row b{
+  color:var(--wine);
+}
+
+/* FOOTER */
+
+footer{
+  background:#3e111b;
+  color:#eadfe0;
+  padding:28px 24px;
+}
+
+.foot{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  font-size:11px;
+}
+
+.gold{
+  color:var(--gold);
+}
+
+/* ANIMATION */
+
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:.7s;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .links{
+    display:none;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding-top:125px;
+  }
+
+  .hero-img{
+    height:480px;
+  }
+
+  .seal{
+    left:15px;
+  }
+
+  .collection-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .products{
+    grid-template-columns:1fr;
+  }
+
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .story img{
+    height:400px;
+  }
+
+  .visit-grid{
+    grid-template-columns:1fr;
+  }
+
+  .facts{
+    gap:20px;
+  }
+}
+
+@media(max-width:520px){
+
+  .brand{
+    font-size:21px;
+  }
+
+  .hero h1{
+    font-size:60px;
+  }
+
+  .hero-img{
+    height:420px;
+  }
+
+  .collection-grid{
+    grid-template-columns:1fr;
+  }
+
+  .collection{
+    height:390px;
+  }
+
+  .section-head h2{
+    font-size:44px;
+  }
+
+  .story h2{
+    font-size:47px;
+  }
+
+  .visit h2{
+    font-size:48px;
+  }
+
+  .foot{
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <a href="#" class="brand">
+      Shri Natraj Alankar
+      <small>Pvt. Ltd. · Fine Jewellery</small>
+    </a>
+
+    <nav class="links">
+      <a href="#collections">Collections</a>
+      <a href="#featured">Jewellery</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Visit Us</a>
+      <a href="#visit" class="navbtn">Enquire</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div>
+
+    <div class="eyebrow">
+      Shri Natraj Alankar Pvt. Ltd.
+    </div>
+
+    <h1>
+      Jewellery<br>
+      with a legacy.
+    </h1>
+
+    <p>
+      Discover thoughtfully crafted jewellery that brings together
+      timeless Indian artistry and contemporary elegance.
+    </p>
+
+    <div class="actions">
+      <a href="#collections" class="btn">
+        Explore Collections
+      </a>
+
+      <a href="#visit" class="btn alt">
+        Visit Our Store
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="hero-img">
+
+    <img
+      src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1100&q=85"
+      alt="Fine jewellery"
+    >
+
+    <div class="seal">
+      TIMELESS
+      <br>
+      <span>ELEGANCE</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- COLLECTIONS -->
+
+<section id="collections" class="collections reveal">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Explore
+      </div>
+
+      <h2>
+        Curated Collections
+      </h2>
+
+      <p>
+        Find a piece for celebrations, milestones and every
+        beautiful moment in between.
+      </p>
+
+    </div>
+
+
+    <div class="collection-grid">
+
+      <a href="#featured" class="collection">
+
+        <img
+          src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=85"
+          alt="Gold jewellery"
+        >
+
+        <div>
+          <h3>Gold</h3>
+          <p>Classic · Refined · Enduring</p>
+        </div>
+
+      </a>
+
+
+      <a href="#featured" class="collection">
+
+        <img
+          src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=800&q=85"
+          alt="Bridal jewellery"
+        >
+
+        <div>
+          <h3>Bridal</h3>
+          <p>Made for your moment</p>
+        </div>
+
+      </a>
+
+
+      <a href="#featured" class="collection">
+
+        <img
+          src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85"
+          alt="Diamond jewellery"
+        >
+
+        <div>
+          <h3>Diamonds</h3>
+          <p>Quiet brilliance</p>
+        </div>
+
+      </a>
+
+
+      <a href="#featured" class="collection">
+
+        <img
+          src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=85"
+          alt="Everyday jewellery"
+        >
+
+        <div>
+          <h3>Everyday</h3>
+          <p>Elegant, effortless pieces</p>
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="featured" class="featured reveal">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Signature Edit
+      </div>
+
+      <h2>
+        Selected Jewellery
+      </h2>
+
+      <p>
+        Explore our jewellery collection and connect with us
+        for current availability and details.
+      </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+      <article class="product">
+
+        <img
+          src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85"
+          alt="Gold necklace"
+        >
+
+        <div class="info">
+
+          <div class="tag">
+            Gold Collection
+          </div>
+
+          <h3>
+            Heritage Necklace
+          </h3>
+
+          <p>
+            Elegant statement design for special occasions.
+          </p>
+
+          <a href="#visit" class="enquire">
+            ENQUIRE →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <img
+          src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85"
+          alt="Diamond ring"
+        >
+
+        <div class="info">
+
+          <div class="tag">
+            Diamond Collection
+          </div>
+
+          <h3>
+            Signature Ring
+          </h3>
+
+          <p>
+            Refined proportions with timeless appeal.
+          </p>
+
+          <a href="#visit" class="enquire">
+            ENQUIRE →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="product">
+
+        <img
+          src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=85"
+          alt="Gold earrings"
+        >
+
+        <div class="info">
+
+          <div class="tag">
+            Fine Jewellery
+          </div>
+
+          <h3>
+            Classic Earrings
+          </h3>
+
+          <p>
+            Designed to add a polished finish to every look.
+          </p>
+
+          <a href="#visit" class="enquire">
+            ENQUIRE →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STORY -->
+
+<section id="story" class="story reveal">
+
+  <div class="story-grid">
+
+    <img
+      src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85"
+      alt="Jewellery craftsmanship"
+    >
+
+
+    <div>
+
+      <div class="eyebrow">
+        The Natraj Alankar Experience
+      </div>
+
+      <h2>
+        Made to be<br>
+        remembered.
+      </h2>
+
+      <p>
+        Jewellery is more than an accessory. It becomes part
+        of the moments we keep. Discover pieces that feel
+        personal, elegant and enduring.
+      </p>
+
+
+      <div class="facts">
+
+        <div class="fact">
+          <strong>01</strong>
+          <span>Personal service</span>
+        </div>
+
+        <div class="fact">
+          <strong>02</strong>
+          <span>Curated designs</span>
+        </div>
+
+        <div class="fact">
+          <strong>03</strong>
+          <span>Celebrations</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="visit" class="visit reveal">
+
+  <div class="visit-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Visit The Store
+      </div>
+
+      <h2>
+        Your next piece<br>
+        starts here.
+      </h2>
+
+      <p>
+        For current collections, availability and jewellery
+        enquiries, connect with the store directly.
+      </p>
+
+      <div class="actions">
+
+        <a
+          href="tel:+917030916900"
+          class="btn"
+          style="background:var(--gold);color:#211a17;"
+        >
+          Call Store
+        </a>
+
+        <a
+          href="https://wa.me/917030916900"
+          class="btn"
+          style="background:white;color:var(--wine);"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <h3>
+        Shri Natraj Alankar
+      </h3>
+
+      <div class="row">
+        <b>Phone</b><br>
+        +91 70309 16900
+      </div>
+
+      <div class="row">
+        <b>Location</b><br>
+        Store address to be added
+      </div>
+
+      <div class="row">
+        <b>Hours</b><br>
+        Store timings to be added
+      </div>
+
+      <br>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Shri+Natraj+Alankar"
+        class="btn"
+      >
+        Open in Google Maps
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="foot">
+
+    <div>
+      © 2026 Shri Natraj Alankar Pvt. Ltd.
+    </div>
+
+    <div class="gold">
+      Fine Jewellery · Crafted with Elegance
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const observer = new IntersectionObserver(
+  entries => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting){
+
+        entry.target.classList.add("show");
+
+      }
+
+    });
+
+  },
+  {
+    threshold:0.12
+  }
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(element => observer.observe(element));
+
+</script>
+
+</body>
+</html>
